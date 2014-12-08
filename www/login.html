@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Validacion de usuarios</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+</head>
+
+<body> 
+
+<div data-role="page" id="inicio">
+
+	<div data-role="header">
+	<header class="bar bar-nav">
+		<h1 align="center">Envia UOC</h1>
+	</header>
+	</div>
+    
+	<div data-role="content">	
+		<form id="formulario" >
+      
+      			<label> Usuario </label>
+      			<input type="text" id="nombredeusuario" name="nombredeusuario">
+      
+      			<label> Password </label>
+     			<input type="password" id="clave" name="clave" >
+
+      			<input type="submit" value="Login" id="botonLogin">
+      
+    		</form>		
+	</div>
+	 
+</div>
+ 
+<div data-role="page" id="home">
+
+	<div data-role="header">
+		<h1>Envía UOC</h1>
+	</div>
+
+	<div data-role="content">	
+		<h2> Bienvenido a Envia UOC</h2>
+		<h3> Menu</h3>
+		<ul >
+			<li class="media-body"><a href="./index.html" rel="external">Consulta de Envíos</a></li>
+			<li class="media-body"><a href="./nuevoEnvio.html" rel="external">Nuevo Envío</a></li>
+		</ul>
+		
+	</div>
+
+</div>
+
+<script>
+
+$('#formulario').submit(function() { 
+	
+	 
+	// recolecta los valores que inserto el usuario
+	var datosUsuario = $("#nombredeusuario").val()
+	var datosPassword = $("#clave").val()
+	
+  	archivoValidacion = "http://revolucion.mobi/ejemplos/phonegap/envioFormulario/validacion_de_datos.php?jsoncallback=?"
+	//archivoValidacion = "/lib/validacion_de_datos.php"
+	$.getJSON( archivoValidacion, { usuario:datosUsuario ,password:datosPassword})
+	.done(function(respuestaServer) {
+		
+		//alert(respuestaServer.mensaje + "\nGenerado en: " + respuestaServer.hora + "\n" +respuestaServer.generador)
+		alert("Consulta de usuario realizada")
+		if(respuestaServer.validacion == "ok"){
+		  
+		 	/// si la validacion es correcta, muestra la pantalla "home"
+			$.mobile.changePage("#home")
+			//alert("1")
+			//$.mobile.loadPage("../index.html") 
+			//$.mobile.loadPage("file:///Users/sergioromero/enviaUOCPhonegap/www/index.html")
+		  
+		}else{
+		  
+		  /// ejecutar una conducta cuando la validacion falla
+		}
+  
+	})
+	return false;
+})
+	
+</script>
+
+</body>
+</html>
