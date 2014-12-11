@@ -7,7 +7,7 @@
     <author>
         Sergio Romero García
     </author>
-    <content src="index.html" />
+    <content src="nuevoEnvio.html" />
     <access origin="*" />
     <access uri="*" subdomains="true" />
 </widget>

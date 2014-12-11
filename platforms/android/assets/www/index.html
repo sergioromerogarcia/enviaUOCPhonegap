@@ -3,29 +3,32 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+     <title>Consulta Envíos</title>
     <link href="assets/ratchet/css/ratchet.css" rel="stylesheet">
-	<link href="assets/css/styles.css" rel="stylesheet">
-	<script src="lib/handlebars.js"></script>
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+    <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+     <script src="lib/handlebars.js"></script>
 </head>
 <body>
 <script id="home-tpl" type="text/template">
-    <header class="bar bar-nav">
-        <h1 class="title">Directory</h1>
-    </header>
-    <div class="bar bar-standard bar-header-secondary">
-        <input class='search-key' type="search"/>
-    </div>
-    <div class="content"></div>
+
+<div class="bar ui-header ui-bar-a" align="center"><h2>Consulta</h2></div>
+     
+<div class="bar bar-standard bar-header-secondary">
+   <input class='search-key' type="search"/>
+</div>
+<div class="content"></div> 
 </script>
 <script id="employee-list-tpl" type="text/template">
     <ul class="table-view">
         {{#each this}}
         <li class="table-view-cell media">
-          <a href="#employees/{{ id }}">
-              <img class="media-object pull-left" src="assets/pics/{{pic}}">
+          <a href="#employees/{{ idEnvio }}">
+             <img class="media-object pull-left" src="assets/pics/rep.png">
               <div class="media-body">
-                  {{firstName}} {{lastName}}
-                  <p>{{title}}</p>
+                  Número de Track: {{idEnvio}} 
+                  <p>{{direccionEnvio}}</p>
               </div>
           </a>
         </li>
@@ -34,7 +37,7 @@
 </script>
 
 <script src="lib/jquery.js"></script>
-<script src="js/services/memory/EmployeeService.js"></script>
+<script src="js/services/memory/EnvioService.js"></script>
 <script src="js/app.js"></script>
 <script src="cordova.js"></script>
 <script src="lib/fastclick.js"></script>

@@ -36,6 +36,8 @@
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/index.html \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/js \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/lib \
+/Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/login.html \
+/Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/nuevoEnvio.html \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/plugins \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/assets/css \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/assets/pics \
@@ -79,6 +81,8 @@
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/assets/pics/Paula_Gates50.jpg \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/assets/pics/Ray_Moore.jpg \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/assets/pics/Ray_Moore50.jpg \
+/Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/assets/pics/rep.jpg \
+/Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/assets/pics/rep.png \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/assets/pics/Steven_Wells.jpg \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/assets/pics/Steven_Wells50.jpg \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/assets/ratchet/css \
@@ -93,6 +97,7 @@
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/assets/ratchet/fonts/ratchicons.svg \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/assets/ratchet/fonts/ratchicons.ttf \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/assets/ratchet/fonts/ratchicons.woff \
+/Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/js/app copia.old.js \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/js/app.js \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/js/HomeView.js \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/js/services \
@@ -102,13 +107,15 @@
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/js/services/websql \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/js/services/json/EmployeeService.js \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/js/services/localstorage/EmployeeService.js \
-/Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/js/services/memory/EmployeeService.js \
+/Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/js/services/memory/EmployeeService copia.js \
+/Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/js/services/memory/EnvioService.js \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/js/services/websql/EmployeeService.js \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/lib/fastclick.js \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/lib/handlebars.js \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/lib/jquery.js \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/lib/pageslider.js \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/lib/router.js \
+/Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/lib/validacion_de_datos.php \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/plugins/org.apache.cordova.device \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/plugins/org.apache.cordova.dialogs \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/plugins/org.apache.cordova.device/www \

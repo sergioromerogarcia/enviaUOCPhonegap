@@ -2,22 +2,15 @@
 (function () {
 
     /* ---------------------------------- Local Variables ---------------------------------- */
-    var service = new EmployeeService();
+    var service = new EnvioService();
     var homeTpl = Handlebars.compile($("#home-tpl").html());
     var employeeListTpl = Handlebars.compile($("#employee-list-tpl").html());
 
-    //service.initialize().done(function () {
-      //  console.log("Service initialized");
       service.initialize().done(function () {
         renderHomeView();
     });
     /* --------------------------------- Event Registration -------------------------------- */
-    //$('.search-key').on('keyup', findByName);
-    /*
-    $('.help-btn').on('click', function() {
-        alert("Employee Directory v3.4");
-    });
-    */
+    
     document.addEventListener('deviceready', function () {
     FastClick.attach(document.body);
       if (navigator.notification) { // Override default HTML alert with native dialog
@@ -25,7 +18,7 @@
               navigator.notification.alert(
                   message,    // message
                   null,       // callback
-                  "Workshop", // title
+                  "Envia UOC", // title
                   'OK'        // buttonName
               );
           };
@@ -33,8 +26,8 @@
     }, false);
     /* ---------------------------------- Local Functions ---------------------------------- */
 function findByName() {
-    service.findByName($('.search-key').val()).done(function (employees) {
-        $('.content').html(employeeListTpl(employees));
+    service.findByName($('.search-key').val()).done(function (envios) {
+        $('.content').html(employeeListTpl(envios));
     });
 }
 function renderHomeView() {
