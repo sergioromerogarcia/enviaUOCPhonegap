@@ -31,9 +31,9 @@
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/Archivo comprimido.zip \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/assets \
+/Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/consultaEnvio.html \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/cordova.js \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/cordova_plugins.js \
-/Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/index.html \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/js \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/lib \
 /Users/sergioromero/enviaUOCPhonegap/platforms/android/assets/www/login.html \

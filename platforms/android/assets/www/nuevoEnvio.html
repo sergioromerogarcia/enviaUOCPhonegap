@@ -13,6 +13,7 @@
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDMKipXcTuBRckHCuRji6d99JVdC-VE1oM&sensor=false">
     </script>
+    <script src="js/services/memory/EnvioService.js"></script>
     <script type="text/javascript">
     //Variables globales
       var map=null;
@@ -27,10 +28,9 @@
         };
         map = new google.maps.Map(document.getElementById("map_canvas"),mapOptions);
       }
-      mostrarUbicacion();
-      function mostrarUbicacion(){
-        navigator.geolocation.getCurrentPosition (lecturaGPS, errorGPS, {enableHighAccuracy:true})
-      }
+      
+      //Cargamos la ubicación donde se encuentra el dispositivo
+      navigator.geolocation.getCurrentPosition (lecturaGPS, errorGPS, {enableHighAccuracy:true})
 
       function lecturaGPS(ubicacion){     
         var miUbicacion = new google.maps.LatLng(ubicacion.coords.latitude, ubicacion.coords.longitude);
@@ -90,7 +90,7 @@
                 <button onClick="grabarNuevo()">Grabar y Nuevo</button>
             </td>
               <td>
-                <button onClick="location.href='index.html'">Consultar</button>
+                <button onClick="location.href='consultaEnvio.html'">Consultar</button>
             </td>
           </tr>
 
@@ -132,6 +132,10 @@
                   }
             });
           }
+       /*
+       El objetivo de esta función es grabar el envio en la base de datos de cliente
+       Dicha base de datos de clientes deberá cruzarse a su vez con una base de datos de envío
+        */   
       function grabarNuevo(){
         var numeroAleatorio = aleatorio(1,9999);
         $( "#NumeroEnvio" ).text( numeroAleatorio + "");
